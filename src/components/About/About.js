@@ -30,6 +30,7 @@ const About = () => {
           <>
             {social.github && (
               <a
+                target="_blank"
                 href={social.github}
                 aria-label='github'
                 className='link link--icon'
@@ -40,6 +41,7 @@ const About = () => {
 
             {social.linkedin && (
               <a
+                target="_blank"
                 href={social.linkedin}
                 aria-label='linkedin'
                 className='link link--icon'

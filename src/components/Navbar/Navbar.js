@@ -8,7 +8,6 @@ import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
 
   const toggleNavList = () => setShowNavList(!showNavList)
@@ -55,15 +54,6 @@ const Navbar = () => {
           </li>
         ) : null}
       </ul>
-
-      <button
-        type='button'
-        onClick={toggleTheme}
-        className='btn btn--icon nav__theme'
-        aria-label='toggle theme'
-      >
-        {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-      </button>
 
       <button
         type='button'
