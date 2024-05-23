@@ -1,20 +1,21 @@
-import uniqid from 'uniqid'
 import { skills } from '../../portfolio'
-import './Skills.css'
 
 const Skills = () => {
-  if (!skills.length) return null
-
   return (
-    <section className='section skills' id='skills'>
-      <h2 className='section__title'>Skills</h2>
-      <ul className='skills__list'>
-        {skills.map((skill) => (
-          <li key={uniqid()} className='skills__list-item btn btn--plain'>
-            {skill}
-          </li>
+    <section className="flex flex-col gap-y-16">
+      <h2 className="text-6xl uppercase font-bold">Skills</h2>
+      <div className="flex flex-col md:flex-row gap-8 justify-between">
+        {Object.entries(skills).map(([key, value]) => (
+          <div key={key}>
+            <div className="font-bold uppercase mb-2">{key}</div>
+            <div className="text-sm">
+              {value.map((skill) => (
+                <div key={skill}>{skill}</div>
+              ))}
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   )
 }

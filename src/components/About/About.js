@@ -1,7 +1,6 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { about } from '../../portfolio'
-import './About.css'
 import { Email } from '@material-ui/icons'
 
 const About = () => {
@@ -9,7 +8,7 @@ const About = () => {
 
   return (
     <div className="h-screen flex items-center">
-      <div class="flex flex-col py-36 gap-y-20 md:gap-y-56">
+      <div className="flex flex-col py-36 gap-y-20 md:gap-y-56">
         <div className="text-lg md:text-4xl font-extralight">
           Hello! 👋
         </div>
