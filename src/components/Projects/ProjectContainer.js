@@ -15,7 +15,7 @@ const ProjectContainer = ({ project }) => (
         {project.stack && (
           <ul className='project__stack'>
             {project.stack.map((item) => (
-              <span className="bg-sky-800 text-gray-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded">
+              <span key={item} className="bg-sky-800 text-gray-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded">
                 {item}
               </span>
             ))}
