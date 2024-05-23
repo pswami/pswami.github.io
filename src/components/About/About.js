@@ -2,6 +2,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import { about } from '../../portfolio'
+import TypeIt from "typeit-react";
 
 const About = () => {
   const { name, role, description, resume, social } = about
@@ -13,9 +14,13 @@ const About = () => {
           Hello! 👋
         </div>
 
-        <p
+        <TypeIt
           className="text-lg md:text-4xl !leading-relaxed max-w-3xl"
-          dangerouslySetInnerHTML={{ __html: description }}
+          options={{
+            strings: [description],
+            speed: 10,
+            waitUntilVisible: true,
+          }}
         />
 
         <div className="flex gap-2">
