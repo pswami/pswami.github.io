@@ -11,7 +11,7 @@ const about = {
   resume: 'https://example.com',
   social: {
     email: 'pauras53@gmail.com',
-    linkedin: 'www.linkedin.com/in/pauraswami',
+    linkedin: 'https://www.linkedin.com/in/pauraswami',
     github: 'https://github.com/pswami',
   },
 }
