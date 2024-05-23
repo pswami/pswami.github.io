@@ -7,10 +7,11 @@ const about = {
   name: 'Pauras Swami',
   role: 'Software Engineer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    'I’m <b>Pauras Swami</b>, an experienced software engineer specializing in full-stack development, focused on delivering high-quality software.',
   resume: 'https://example.com',
   social: {
-    linkedin: 'https://www.linkedin.com/in/pauras-swami-36772270/',
+    email: 'pauras53@gmail.com',
+    linkedin: 'www.linkedin.com/in/pauraswami',
     github: 'https://github.com/pswami',
   },
 }
@@ -44,21 +45,14 @@ const projects = [
   },
 ]
 
-const skills = [
-  'Ruby on Rails',
-  'SQL',
-  'HTML',
-  'JavaScript',
-  'TypeScript',
-  'Solidity',
-  'React',
-  'Redux',
-  'SASS',
-  'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
-]
+const skills = {
+  frameworks: ['Ruby on Rails', 'React', 'Redux', 'Next.js'],
+  languages: ['JavaScript', 'TypeScript', 'Solidity', 'HTML', 'Python', 'Java', 'C'],
+  tools: ['Git', 'CI/CD', 'Flow Blockchain', 'Docker', 'Redis'],
+  testing: ['Jest', 'Enzyme', 'Cypress'],
+  styles: ['SASS', 'Tailwind CSS'],
+  datbase: ['SQL', 'PostgreSQL', 'MongoDB', 'Redis'],
+};
 
 const contact = {
   email: 'pauras53@yahoo.com',

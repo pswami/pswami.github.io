@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
-import Header from './components/Header/Header'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
@@ -13,14 +12,12 @@ const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
   return (
-    <div id='top' className={`${themeName} app`}>
-      <Header />
-
+    <div id='top' className={`${themeName} app px-8`}>
       <main>
         <About />
-        <Projects />
+        {/* <Projects /> */}
         <Skills />
-        <Contact />
+        {/* <Contact /> */}
       </main>
 
       <ScrollToTop />
