@@ -1,6 +1,5 @@
-import uniqid from 'uniqid'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 const ProjectContainer = ({ project }) => (
   <div className='w-full block p-6 bg-gray-800 border rounded-lg shadow border-gray-700'>
