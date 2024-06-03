@@ -7,7 +7,7 @@ const about = {
   name: 'Pauras Swami',
   role: 'Software Engineer',
   description:
-    'I’m <b>Pauras Swami</b>, an experienced software engineer specializing in full-stack development.',
+    'I’m <b>Pauras Swami</b>, an experienced full-stack software engineer',
   resume: 'https://example.com',
   social: {
     email: 'pauras53@gmail.com',
